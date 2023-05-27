@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99 bottles</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+     <div class="container-fluid m-3 p-3" >
+        <div class="row">
+            <div class="form-control col-md-9 col-sm-3">
+                <button onclick="getLyrics()" style="color: bisque; background-color: black; align-items: center;" class="btn my-3">Get Lyrics</button>
+                <div id="disp" style="background-color: blueviolet;" class="p-5 m-5"></div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function getLyrics() {
+            for(var i=99;i>=1;i--){
+                 if (i>1){
+                // disp.innerHTML +=
+                //     `${i} bottles of fanta on the wall,${i} bottles of beer.
+                //    Take one down and pass it around, ${i-1}botttles on the wall`
+                disp.innerHTML +=  `<h1>${i} bottles of fanta on the wall, ${i} bottles of fanta
+                    Take one down and pass it around, ${i-1} botttles on the wall</h1>`}
+                   else if (i==1) {
+                    disp.innerHTML+=`<h1>${i} bottle of fanta on the wall, ${i} bottle of fanta
+                    Take one down,pass it around.
+                    
+                    No more bottles of fanta on the wall,No more bottles of fanta Go to the the store and buy some more.</h1>`
+
+                    
+                }
+                    
+        }
+        }
+    </script>
+</body>
+</html>
